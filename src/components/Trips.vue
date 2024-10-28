@@ -5,7 +5,7 @@
             <li v-for="trip in trips" :key="trip.id">
                 <h2>{{ trip.name }}</h2>
                 <p>{{ trip.date }}</p>
-                <img :src="`https://camper4fourdev-38684757747e.herokuapp.com/storage/${trip.image_path}`" alt="Image" width="200">
+                <img :src="trip.image_path" alt="Image" width="200">
             </li>
         </ul>
     </div>
