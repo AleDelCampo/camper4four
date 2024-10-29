@@ -4,8 +4,8 @@
         <ul>
             <li v-for="trip in trips" :key="trip.id">
                 <h2>{{ trip.name }}</h2>
-                <p>{{ trip.date }}</p>
-                <img :src="trip.image_path" alt="Image" width="200">
+                <p>{{ trip.description }}</p>
+                <img :src="trip.image" alt="Image" width="200">
             </li>
         </ul>
     </div>
