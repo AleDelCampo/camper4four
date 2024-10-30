@@ -315,7 +315,7 @@ export default {
 
     // Fetch dei luoghi utilizzando Yelp API
     async fetchYelpPlaces(term, location) {
-      const apiKey = 'gBxMHufFJrBhAPt1Joi2s_GfgGHx0xkK9QKgMMDvPjtUEyt5ARuzUWf0D8SoS24RxjlGda88oB0XuyVPlXjrFGJxr0_fA90rjWXwIc-BoM-6_UKOmLc1kEn4aJPRZnYx';
+      const apiKey = 'tqB3DaX-sBcjD8ZeOUu1CtjGf8SAcpsPYXZARW6ulpAiFw5tEaqjeMRtFBJMYjMyV9SxAia2lrvCQ4qkRth0YewPBDmkjBMc3XiAhADrAGfK7vvYl9mRwF-PA3giZ3Yx';
       const url = `https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&limit=40`;
 
       const response = await fetch(url, {
