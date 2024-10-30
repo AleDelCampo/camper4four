@@ -11,7 +11,7 @@
         <div class="row">
             <div v-for="trip in trips" :key="trip.id" class="col-md-4">
                 <div class="card mb-4 card-bg">
-                    <div v-if="trip.image">
+                    <div>
                         <img src="https://img.freepik.com/foto-gratuito/vista-futuristica-del-pianeta-terra-ad-alta-tecnologia_23-2151100433.jpg" class="card-img-top img-card" :alt="trip.title">
                     </div>
                     <div class="card-body">
