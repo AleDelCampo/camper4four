@@ -25,7 +25,7 @@ export default {
     methods: {
         async fetchTrips() {
             try {
-                const response = await axios.get('https://camper4fourdev-38684757747e.herokuapp.com/trips');
+                const response = await axios.get('https://camper4fourdev-38684757747e.herokuapp.com/api/trips');
                 this.trips = response.data;
             } catch (error) {
                 console.error("Si è verificato un errore nel caricamento degli elementi:", error);
