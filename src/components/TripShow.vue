@@ -1,7 +1,7 @@
 <template>
   <!-- Contenitore principale -->
   <div class="container">
-    
+
     <!-- Sezione di benvenuto -->
     <div class="jumbotron text-center text-white py-5 my-bg">
       <h1 class="display-4">Welcome to MyTrips</h1>
@@ -10,7 +10,7 @@
 
     <!-- Sezione dei dettagli del viaggio -->
     <div class="trip-content">
-      
+
       <!-- Dettagli del viaggio -->
       <div class="trip-details">
         <!-- Mostra il titolo del viaggio se esiste -->
@@ -23,14 +23,15 @@
 
       <!-- Sezioni del viaggio -->
       <div class="trip-sections">
-        
+
         <!-- Sezione per ogni giorno del viaggio -->
         <div class="day-section" v-for="day in trip.days" :key="day.id">
           <!-- Mostra la data del giorno -->
           <div class="date-box">
-            <h2 class="date-text">Day: <i class="fa-regular fa-calendar"></i> {{ new Date(day.date).toLocaleDateString('en-EN', {
-              weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
-            }) }}</h2>
+            <h2 class="date-text">Day: <i class="fa-regular fa-calendar"></i> {{ new
+              Date(day.date).toLocaleDateString('en-EN', {
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+              }) }}</h2>
           </div>
           <ul class="mb-4 mt-4">
             <!-- Elenco delle fermate per ogni giorno -->
@@ -47,11 +48,12 @@
               <div>
                 <!-- Barra di ricerca per i luoghi -->
                 <div class="places-bar mt-3">
-                <input v-model="stop.searchQuery" @keyup.enter="searchPlaces(stop)"
-                  placeholder="Search by category (e.g. 'Beach', 'Bar', 'Restaurant')" />
-                <button class="btn text-white" @click="searchPlaces(stop)"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </div>
-                
+                  <input v-model="stop.searchQuery" @keyup.enter="searchPlaces(stop)"
+                    placeholder="Search by category (e.g. 'Beach', 'Bar', 'Restaurant')" />
+                  <button class="btn text-white" @click="searchPlaces(stop)"><i
+                      class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
                 <!-- Mostra i risultati della ricerca dei luoghi se ci sono risultati -->
                 <div v-if="stop.places.length">
                   <h2>Results for "{{ stop.searchQuery }}"</h2>
@@ -110,7 +112,7 @@
 
       <!-- Sezioni di ricerca -->
       <div class="search-sections">
-        
+
         <!-- Ricerca di piatti tipici -->
         <div class="dishes-search">
           <h1 class="my-4">Search Typical Dishes</h1>

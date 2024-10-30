@@ -55,6 +55,7 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {
@@ -64,14 +65,14 @@ export default {
                     name: 'Alessandro Del Campo',
                     role: 'Developer',
                     bio: 'Alessandro is the visionary behind MyTrips, with a passion for the unknown and technology, the "Artisan".',
-                    photo: '/public/IoCv.jpeg'
+                    photo: '/IoCv.jpeg'
                 },
                 {
                     id: 2,
                     name: 'Marika Barbagallo',
                     role: 'Photographer',
                     bio: 'Marika is responsible for the style and photographs of MyTrips, with a passion for travel, the "Artist".',
-                    photo: '/public/IoCv.jpeg'
+                    photo: '/IoCv.jpeg'
                 }
             ]
         };
@@ -121,7 +122,7 @@ p, ul, li {
 }
 
 body {
-    background-image: url(public/Sfondo.jpg);
+    background-image: url(/Sfondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
