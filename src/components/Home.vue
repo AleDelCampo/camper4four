@@ -74,7 +74,7 @@ export default {
 
 .logo {
     background-color: #4a5d5e;
-    background-image: url(public/LogoTripss.png);
+    background-image: url(/LogoTripss.png);
     height: 280px;
     background-position: center;
     background-size: contain;

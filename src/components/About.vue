@@ -65,7 +65,7 @@ export default {
                     name: 'Alessandro Del Campo',
                     role: 'Developer',
                     bio: 'Alessandro is the visionary behind MyTrips, with a passion for the unknown and technology, the "Artisan".',
-                    photo: '/IoCv.jpeg'
+                    photo: '/FotoPorero.png'
                 },
                 {
                     id: 2,
